@@ -1,0 +1,43 @@
+.add-cv-form-page {
+  width: 100%;
+  min-height: 700px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-cont {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  margin: 2rem;
+  width: 100%;
+  min-height: 600px;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.add-education-info-form-btn {
+  width: 100px;
+}
+.field-cont {
+  background-color: limegreen;
+  width: 60%;
+}
+
+.field-cont__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: magenta;
+}
+.field {
+  width: 100%;
+}

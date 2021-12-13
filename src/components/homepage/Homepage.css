@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage-cont {
+  width: 100%;
+  min-height: 700px;
+  background-color: mediumaquamarine;
+  display: flex;
+  justify-content: center;
+}
+
+.cvList-cont {
+  width: 60%;
+  background-color: mediumpurple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
