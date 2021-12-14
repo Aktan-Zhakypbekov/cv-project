@@ -128,4 +128,4 @@ const GeneralInfo = () => {
     </Formik>
   );
 };
-export default GeneralInfo;
+//export default GeneralInfo;

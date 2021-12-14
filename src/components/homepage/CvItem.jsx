@@ -1,15 +1,9 @@
 import React from 'react';
 
-const CvItem = ({
-  generalInfoItem,
-  educationInfoItem,
-  workExperienceInfoItem,
-}) => {
+const CvItem = ({ dataItem }) => {
   return (
     <div className='cv-item'>
-      <div>{generalInfoItem.firstName}</div>
-      <div>{educationInfoItem.major}</div>
-      <div>{workExperienceInfoItem.position}</div>
+      <div>{dataItem.firstName}</div>
     </div>
   );
 };

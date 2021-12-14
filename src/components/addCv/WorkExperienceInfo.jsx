@@ -129,4 +129,4 @@ const WorkExperienceInfo = () => {
   );
 };
 
-export default WorkExperienceInfo;
+//export default WorkExperienceInfo;

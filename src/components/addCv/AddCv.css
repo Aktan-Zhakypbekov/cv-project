@@ -6,38 +6,41 @@
   flex-direction: column;
   align-items: center;
 }
-
-.form-cont {
+.add-cv-form {
   width: 60%;
+  background-color: lightskyblue;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form {
-  margin: 2rem;
-  width: 100%;
-  min-height: 600px;
+.form-block {
   background-color: lightseagreen;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-}
-.add-education-info-form-btn {
-  width: 100px;
-}
-.field-cont {
-  background-color: limegreen;
-  width: 60%;
 }
 
-.field-cont__inner {
+.input-cont {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: magenta;
+  background-color: limegreen;
 }
-.field {
-  width: 100%;
+
+.input {
+  width: 300px;
+  height: 30px;
+}
+
+.lolo {
+  background-color: lightpink;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-form-btn {
+  margin: 2rem;
 }

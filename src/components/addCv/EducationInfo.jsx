@@ -148,4 +148,4 @@ const EducationInfo = () => {
   );
 };
 
-export default EducationInfo;
+//export default EducationInfo;
