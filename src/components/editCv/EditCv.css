@@ -1,0 +1,46 @@
+.edit-cv-form-page {
+  width: 100%;
+  min-height: 700px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-cv-form {
+  width: 60%;
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-block {
+  background-color: lightseagreen;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  background-color: limegreen;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+}
+
+.lolo {
+  background-color: lightpink;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-form-btn {
+  margin: 2rem;
+}

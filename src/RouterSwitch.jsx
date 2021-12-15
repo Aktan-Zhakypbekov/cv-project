@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import Homepage from './components/homepage/Homepage';
-import Cv from './components/cv/Cv';
+import ShowCv from './components/showCv/ShowCv';
 import AddCv from './components/addCv/AddCv';
 import EditCv from './components/editCv/EditCv';
 
@@ -14,8 +14,8 @@ function RouterSwitch() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/addCv' element={<AddCv />} />
-          <Route path='/cv' element={<Cv />} />
-          <Route path='/cv/editCv' element={<EditCv />} />
+          <Route path='/showCv/:id' element={<ShowCv />} />
+          <Route path='/showCv/:id/editCv/:id' element={<EditCv />} />
         </Routes>
       </div>
     </BrowserRouter>

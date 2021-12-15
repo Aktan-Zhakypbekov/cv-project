@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const AddCv = () => {
   const [data, setData] = useState({
+    id: uniqid(),
     generalInfo: {
       firstName: '',
       lastName: '',
