@@ -10,7 +10,6 @@ const EditCv = () => {
 
   const location = useLocation();
   const [data, setData] = useState(location.state);
-  const { generalInfo, educationInfo, workExperienceInfo } = data;
 
   const onChangeGeneral = (e) => {
     setData((prev) => {
@@ -62,7 +61,7 @@ const EditCv = () => {
             type='text'
             name='university'
             className='input'
-            value={educationInfo[0].university}
+            value={elem.university}
             onChange={(e) => onChangeEdu(e, elem.id)}
           />
         </div>
@@ -72,7 +71,7 @@ const EditCv = () => {
             type='text'
             name='degree'
             className='input'
-            value={educationInfo[0].degree}
+            value={elem.degree}
             onChange={(e) => onChangeEdu(e, elem.id)}
           />
         </div>
@@ -82,7 +81,7 @@ const EditCv = () => {
             type='text'
             name='major'
             className='input'
-            value={educationInfo[0].major}
+            value={elem.major}
             onChange={(e) => onChangeEdu(e, elem.id)}
           />
         </div>
@@ -92,7 +91,7 @@ const EditCv = () => {
             type='text'
             name='cityEdu'
             className='input'
-            value={educationInfo[0].cityEdu}
+            value={elem.cityEdu}
             onChange={(e) => onChangeEdu(e, elem.id)}
           />
         </div>
@@ -102,7 +101,7 @@ const EditCv = () => {
             type='text'
             name='yearFromEdu'
             className='input'
-            value={educationInfo[0].yearFromEdu}
+            value={elem.yearFromEdu}
             onChange={(e) => onChangeEdu(e, elem.id)}
           />
         </div>
@@ -112,7 +111,7 @@ const EditCv = () => {
             type='text'
             name='yearToEdu'
             className='input'
-            value={educationInfo[0].yearToEdu}
+            value={elem.yearToEdu}
             onChange={(e) => onChangeEdu(e, elem.id)}
           />
         </div>
@@ -128,7 +127,7 @@ const EditCv = () => {
             type='text'
             name='position'
             className='input'
-            value={workExperienceInfo[0].position}
+            value={elem.position}
             onChange={(e) => onChangeWork(e, elem.id)}
           />
         </div>
@@ -138,7 +137,7 @@ const EditCv = () => {
             type='text'
             name='company'
             className='input'
-            value={workExperienceInfo[0].company}
+            value={elem.company}
             onChange={(e) => onChangeWork(e, elem.id)}
           />
         </div>
@@ -148,7 +147,7 @@ const EditCv = () => {
             type='text'
             name='cityWork'
             className='input'
-            value={workExperienceInfo[0].cityWork}
+            value={elem.cityWork}
             onChange={(e) => onChangeWork(e, elem.id)}
           />
         </div>
@@ -158,7 +157,7 @@ const EditCv = () => {
             type='text'
             name='yearFromWork'
             className='input'
-            value={workExperienceInfo[0].yearFromWork}
+            value={elem.yearFromWork}
             onChange={(e) => onChangeWork(e, elem.id)}
           />
         </div>
@@ -168,7 +167,7 @@ const EditCv = () => {
             type='text'
             name='yearToWork'
             className='input'
-            value={workExperienceInfo[0].yearToWork}
+            value={elem.yearToWork}
             onChange={(e) => onChangeWork(e, elem.id)}
           />
         </div>
@@ -182,7 +181,7 @@ const EditCv = () => {
         className='edit-cv-form'
         onSubmit={(e) => {
           e.preventDefault();
-          dispatch({ type: 'ADD_DATA', payload: data });
+          dispatch({ type: 'EDIT_DATA', payload: data });
           navigate('/');
         }}
       >
@@ -194,7 +193,7 @@ const EditCv = () => {
                 type='text'
                 name='firstName'
                 className='input'
-                value={generalInfo.firstName}
+                value={data.generalInfo.firstName}
                 onChange={(e) => onChangeGeneral(e)}
               />
             </div>
@@ -204,7 +203,7 @@ const EditCv = () => {
                 type='text'
                 name='lastName'
                 className='input'
-                value={generalInfo.lastName}
+                value={data.generalInfo.lastName}
                 onChange={(e) => onChangeGeneral(e)}
               />
             </div>
@@ -214,7 +213,7 @@ const EditCv = () => {
                 type='text'
                 name='email'
                 className='input'
-                value={generalInfo.email}
+                value={data.generalInfo.email}
                 onChange={(e) => onChangeGeneral(e)}
               />
             </div>
@@ -224,7 +223,7 @@ const EditCv = () => {
                 type='text'
                 name='city'
                 className='input'
-                value={generalInfo.city}
+                value={data.generalInfo.city}
                 onChange={(e) => onChangeGeneral(e)}
               />
             </div>
@@ -234,7 +233,7 @@ const EditCv = () => {
                 type='text'
                 name='phoneNumber'
                 className='input'
-                value={generalInfo.phoneNumber}
+                value={data.generalInfo.phoneNumber}
                 onChange={(e) => onChangeGeneral(e)}
               />
             </div>
